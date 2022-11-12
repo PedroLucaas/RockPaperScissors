@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        $("#pedra").click(function(){
+            //$("#elemento").text("Hello world!");
+            resultado.innerHTML="Escolhido Pedra";
+            // $("#papel").html("<b>foi _clicado_ este!!</b>");
+        });
+
+        $("#papel").click(function(){
+            //$("#papel").html("<b>Hello world!</b>");
+            resultado.innerHTML="Escolhido Papel";
+        });
+        
+        $("#tesoura").click(function(){
+            // $("#test3").val("outra forma...val");
+            resultado.innerHTML="Escolhido Tesoura";
+        });
+    </script>
+    <h1 class="title">janKenPon</h1>
+    <h2 class="title">Escolha uma opção:</h2>
+    <div class="container">
+        <div class="circles" id="pedra"><img src="img/pedra.png" alt="Stone"></div>
+        <div class="circles" id="papel" ><img src="img/papel.png" alt="Paper" srcset=""></div>
+        <div class="circles" id="tesoura"><img src="img/tesoura.png" alt="Scissors" srcset=""></div>
+    </div>  
+    <button onclick="playGame()" class="buttonPlay" >Play</button>
+    <p id="resultado"></p>
+    <script src="jogo.js"></script>
+</body>
+</html>
