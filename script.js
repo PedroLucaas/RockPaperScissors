@@ -2,7 +2,7 @@ var rock = document.querySelector("#rock");
 var paper = document.querySelector("#paper");
 var scissor = document.querySelector("#scissor");
 var result = document.querySelector("#result");
-var botChoice;
+var botChoice;  
 var playerChoice;
 var choose;
 
